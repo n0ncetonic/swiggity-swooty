@@ -1,12 +1,11 @@
 # swiggity-swooty
 _Where to go when you're looking for that booty_
+> Originally this repository was going to be focused specifically around information gathering useful during post-exploitation of machines; hence the pirate looting motif with the repo name.
 
 ## Purpose
-The purpose of this repository is to become an aggregation point for TTPs primarily intended for internal Offensive Security Teams and Redteams but are surely useful to the greater security community.
+The purpose of this repository is to become an aggregation point for TTPs primarily intended for internal Offensive Security Teams and Redteams but are surely useful to the greater security community. 
 
 A lot of the information provided initially will be from my own private notes that have at this point become unruly to manage. Instead of maintaining a slew of Github Gists, text files on my computer, documents on Google Drive, Dropbox, Dropbox Paper, a NAS, and physical notebooks –all segmented and incredibly difficult to reference effectively– this repository aims to consolidate, categorize, and amalgamate the data.
-
-Additionally, I came to the realization that I was hording information for no purpose other than to share with colleagues when exchanging war stories. In an attempt to minimize "tribal knowledge" and foster a community centered around an open exchange of information between security professionals and hobbyists, this repository will serve as a braindump of TTPs I formerly kept to myself or shared with close friends.
 
 ## Contribution
 Contribution is the life of this repository. Sharing your personal arcane dark magic helps enlighten others and provides a platform for exchanging ideas that spark collaboration. 
