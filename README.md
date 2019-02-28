@@ -16,3 +16,15 @@ Contributions need not be mindblowing or 0day to be useful. If you discover some
 ## Organization and Quality
 As the repository grows and individual notes begin to form logically related groups I have every intention of producing high quality documentation and currating collections of documents. Whenever possible, contributors should strive to produce documents written in proper English and that maintain the caliber of the community hivemind. 
 
+
+
+
+
+
+
+
+
+
+
+
+Swiggity-Swooty is a community maintained knowledge repository originally created by @n0ncetonic that exemplifies the dedication to open-source which forms the foundation of the Blacksun Research Labs group.
