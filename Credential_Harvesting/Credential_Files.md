@@ -20,3 +20,14 @@ github.com:
   oauth_token: 3a222191f33b2b3f83f8cd2f93c493e2cbdfecec
   protocol: https
 ```
+
+#### Alternative
+Alternatively if the system is macOS (I'll add notes on linux at a later date) and utilizing the `git credential-osxkeychain` credential manager scheme it is possible to query the user's keychain for the corresponding user's git credentials without alterting the user with an authorization request.
+
+```
+$ git credential-osxkeychain get
+host=github.com
+proto=https
+```
+
+> NOTE: When you press return on the initial git command your terminal will appear to hang. At this point type in the hostname to the git server you are interested in, press return again, enter proto=https (I have yet to try this with ssh key authentication, YMMV) and pretty return twice. After which the command will spit out your credentials.
