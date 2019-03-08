@@ -31,3 +31,24 @@ proto=https
 ```
 
 > NOTE: When you press return on the initial git command your terminal will appear to hang. At this point type in the hostname to the git server you are interested in, press return again, enter proto=https (I have yet to try this with ssh key authentication, YMMV) and pretty return twice. After which the command will spit out your credentials.
+
+## Email & Communication
+
+### Slack OAUTH Tokens
+
+* Default path(s)*:`$HOME/Library/Application\ Support/Slack/Local\ Storage/leveldb/*.log`, `$HOME/Library/Application\ Support/Slack/Local\ Storage/leveldb/*.ldb`, `$HOME/Library/Application\ Support/Slack/Local\ Storage/leveldb/MANIFEST-*`
+
+*Description*: Contains Slack OAUTH "Legacy" token. Slack claims these are no longer in use but that appears not to be the case with their official desktop client (at least for macOS). Bypasses 2FA/SSO if enabled on the account.
+
+> These tokens were associated with legacy custom integrations and early Slack integrations requiring an ambiguous "API token." They were generated using the legacy token generator and are no longer recommended for use. They take on the full operational scope of the user that created them. If you're building a tool for your own team, we encourage creating an internal integration with only the scopes it needs to work.
+_From Slack developer documentation_
+
+*Using it*: You'll need to run `strings` or similar on the files and look for strings that match the regex `/xoxs-\d+-\d+-\d+-[\da-f]+/` . If you're looking for a tool that will harvest the tokens as well as test if they are still valid take a look at [toke_em](https://github.com/n0ncetonic/toke_em)
+
+ 
+Testing token validity: `curl -s https://slack.com/api/auth.test?token=xoxs-YOUR-TOKEN-GOES-HERE&pretty=1`
+
+
+Full RTM Snapshot: `curl -s https://slack.com/api/rtm.start?token=xoxs-YOUR-TOKEN-GOES-HERE&pretty=1`
+
+Otherwise just grab your favorite Slack RTM API module/library and connect using the Legacy token and watch as messages and events fire in real time.
